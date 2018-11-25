@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int i,j,s,a[10],temp=0;
+clrscr();
+printf("Enter the size of Array:\n");
+scanf("%d",&s);
+printf("Enter the Array:\n");
+for(i=0;i<s;i++)
+{
+scanf("%d",&a[i]);
+}
+for(i=1;i<s;i++)
+{
+for(j=0;j<s-i;j++)
+{
+if(a[j]>a[j+1])
+{
+temp=a[j];
+a[j]=a[j+1];
+a[j+1]=temp;
+}
+}
+}
+printf("Sorted Array is :");
+for(i=0;i<s;i++);
+printf(%d",a[i]);
+getch();
+}
